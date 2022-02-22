@@ -34,6 +34,5 @@ public class Calc {
 		System.out.println(20/10); //2
 		System.out.println(10/20); //0
 	}
-
 }
 

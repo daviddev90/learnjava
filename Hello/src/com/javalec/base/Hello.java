@@ -8,6 +8,9 @@ public class Hello { //Class 이름
 	public static void main(String[] args) { //Method 이름
 		// TODO Auto-generated method stub
 		System.out.println("Dongwon");
+		System.out.println(123);
+		
 	}
 
 }
+
