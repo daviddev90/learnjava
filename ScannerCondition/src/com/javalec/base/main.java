@@ -6,7 +6,7 @@ public class main {
 	public static void main(String[] args) {
 		
 		// Scanner를 이용해 입력 받기
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in); 
 		
 		//Console에서 Data 가져오기
 		System.out.print("숫자를 입력하세요!"); //print 뒤에 ln이 없으면 줄바꿈을 하지 않음
