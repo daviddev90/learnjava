@@ -5,10 +5,19 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("앵무새에게 할 말을 입력해주세요 : ");
-		String str1 = scanner.nextLine();
-		System.out.println(str1 + "요를레이히");
+		Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        
+        for(int i = 1; i <= n; i++){
+            String star = "";
+            for(int j = n-1; j>= 0; j--){
+                star += " ";
+            }
+            for(int j = 1; j<= i; j++){
+                star += "*";
+            }
+            System.out.println(star);
+        }
 	}
 
 }
