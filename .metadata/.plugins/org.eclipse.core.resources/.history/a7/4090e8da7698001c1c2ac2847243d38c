@@ -1,0 +1,19 @@
+package com.javalec.base;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int i=1, j=10;
+		//우리가 만든 클래스에서 인스턴스를 만들어 사용
+		SumEvenOdd sumEvenOdd = new SumEvenOdd();
+	
+		int sum = sumEvenOdd.sumCalc(i, j);
+		System.out.println(sum);
+		
+		String result = sumEvenOdd.evenOrOdd(sum);
+		System.out.println(result + "입니다.");
+		
+	}
+	
+}

@@ -1,0 +1,37 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Quiz2 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String className[] = {"Korean","English","Mathematics", "Total", "Average"};
+		
+		int scores[][] = {{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+		
+		for (int i = 0; i<3; i++) {
+			System.out.println(className[i] + "의 성적을 입력");
+			for (int j = 0; j<4; j++) {
+				System.out.print("No" + (j+1) + "의 성적은: ");
+				int score = in.nextInt();
+				scores[j][i] = score;
+				scores[j][3] += score;
+			}
+		}
+		
+		System.out.println("\t Korean \t English \t Mathematics \t Total \t Average");
+
+		for (int i = 0; i< scores.length; i++) {
+			String txt = "No" + i + "\t";
+			for (int j = 0; j<4; j++) {
+				txt += scores[j][i] + '\t';
+				txt += scores[j][3]/3;
+			}
+			
+			System.out.println(txt);
+		}
+		
+	}
+
+}

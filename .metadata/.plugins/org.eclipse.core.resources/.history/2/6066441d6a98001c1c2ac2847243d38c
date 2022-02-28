@@ -1,0 +1,28 @@
+package com.javalec.base;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String str1 = "a";
+		long startTime1 = System.currentTimeMillis();
+		for(int i=1; i<=150000; i++) {
+			str1 = str1 + "a";
+		}
+		long endTime1 = System.currentTimeMillis();
+		
+		System.out.println("String: " + (endTime1 - startTime1));
+		
+		// ------------
+		
+		StringBuilder strBuilder = new StringBuilder("a");
+		
+		long startTime2 = System.currentTimeMillis();
+		for(int i=1; i<=150000; i++) {
+			strBuilder = strBuilder.append("a");
+		}
+		long endTime2 = System.currentTimeMillis();
+		
+		System.out.println("StringBuilder: " + (endTime2 - startTime2));
+	}
+
+}

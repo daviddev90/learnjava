@@ -1,0 +1,40 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Quiz2 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("입력할 숫자의 갯수? : ");
+		int n = in.nextInt();
+		int[] arr = new int[n];
+		
+		System.out.println(n + "개의 숫자를 입력하세요!:");
+	    
+		for (int i=0; i<n; i++) {
+			System.out.print((i+i) + "의 숫자: ");
+			arr[i] = in.nextInt();
+		}
+		
+		System.out.println("검색할 숫자는? :");
+		int search = in.nextInt();
+		
+		int where = 0;
+		
+		for (int i=0; i<n; i++) {
+			if(arr[i] == search) {
+				where = (i+1);
+			}
+		}
+		
+		if(where == 0) {
+			System.out.println(search + "는 존재하지 않습니다.");
+		}else {
+			System.out.println(search + "의 숫자는 " + where + "번째 입니다.");
+		}
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Quiz2 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		int[] kor = new int[4];
+		int[] eng = new int[4];
+		int[] math = new int[4];
+		
+		System.out.println("Korean의 성적을 입력");
+		for (int i = 1; i<=4; i++) {
+			System.out.print("No" + i + "의 성적은: ");
+			kor[i] = in.nextInt();
+		}
+		System.out.println("English의 성적을 입력");
+		for (int i = 1; i<=4; i++) {
+			System.out.print("No" + i + "의 성적은: ");
+			eng[i] = in.nextInt();
+		}
+		System.out.println("Mathematics의 성적을 입력");
+		for (int i = 1; i<=4; i++) {
+			System.out.print("No" + i + "의 성적은: ");
+			math[i] = in.nextInt();
+		}
+		
+		System.out.println("\t Korean \t English \t Mathematics \t Total \t Average");
+		
+		
+	}
+
+}

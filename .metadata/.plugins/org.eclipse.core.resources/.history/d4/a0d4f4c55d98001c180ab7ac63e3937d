@@ -1,0 +1,8 @@
+package com.javalec.bas2;
+
+import java.util.Scanner;
+
+public class Quiz3 {
+	Scanner in = new Scanner(System.in);
+	
+}

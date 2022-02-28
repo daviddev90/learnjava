@@ -1,0 +1,23 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Quiz4 {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		//앞의 Scanner는 class, 뒤의 Scanner는 생성자. > 생성자는 ()가 있음
+		
+		String str1 = "abcdefg";
+		String str2 = "HIJKLMN";
+		String str3 = "opqrstu";
+		String str4 = "    abc    def    ghi    ";
+		String str5 = "  abcdefg  ";
+		String str6 = "abacad";
+		
+		System.out.println(str1.replaceAll("a",""));
+		System.out.println(str1.substring(1));
+		System.out.println(str6.replaceAll("a", ""));
+		
+	}
+}
