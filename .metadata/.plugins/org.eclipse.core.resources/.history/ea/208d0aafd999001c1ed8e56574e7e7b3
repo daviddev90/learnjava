@@ -1,0 +1,12 @@
+package com.javalec.function;
+
+public class Korean {
+	//Field
+	
+	//Constructor
+	public Korean() {
+		
+	}
+	
+	//Method
+}

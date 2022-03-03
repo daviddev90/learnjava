@@ -1,0 +1,29 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		
+		int firstNum = in.nextInt();
+		int max = firstNum;
+		int min = firstNum;
+		
+		for (int i = 1; i < n; i++) {
+			int nextNum = in.nextInt(); 
+			if(max < nextNum) {
+				max = nextNum;
+			}
+			if(min > nextNum) {
+				min = nextNum;
+			}
+		}
+		
+		System.out.println(min + " " +max);
+	}
+	
+}

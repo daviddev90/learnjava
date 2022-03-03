@@ -1,0 +1,27 @@
+package com.javalec.function;
+
+public class FieldDan {
+	public int dan = 0;
+	int maxMultiple = 9;
+	
+	public FieldDan() {
+		
+	}
+	ReturnDanString returnDanString = new ReturnDanString();
+	
+	public void printDan() {
+		for(int i = 1; i <= maxMultiple; i++) {
+			System.out.println("(Field) " + returnDanString.returnString(i, dan));
+		}
+	}
+	
+	public String[] returnArrDan() {
+		String[] arr = new String[9];
+		
+		for(int i = 1; i <= maxMultiple; i++) {
+			arr[i-1] = ("(FieldArr) " + returnDanString.returnString(i, dan));
+		}
+		
+		return arr;
+	}
+}

@@ -1,0 +1,23 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// ---------------------------------//
+		// 두 개의 정수를 입력받아 덧셈 기능 구현하기
+		// ---------------------------------//
+		
+		Scanner scanner = new Scanner(System.in);
+		int num1 = 0;
+		int num2 = 0;
+		
+		System.out.println("첫번째 수를 입력하세요 : ");
+		num1 = scanner.nextInt();
+
+		System.out.println("두번째 수를 입력하세요 : ");
+		num2 = scanner.nextInt();
+	}
+
+}

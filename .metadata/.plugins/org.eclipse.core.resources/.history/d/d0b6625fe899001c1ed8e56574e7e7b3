@@ -1,0 +1,22 @@
+package com.bj.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		String word = scan.next();
+		String alphabet = "abcdefghijklmnopqrstuvwxyz";
+		String[] abArr = alphabet.split("");
+		int[] abLoc = new int[26];
+		
+		for (int i = 0; i < abArr.length; i++) {
+			int idx = word.indexOf(abArr[i]);
+			abLoc[i] = idx;
+			System.out.print(idx + " ");
+		}
+	}
+
+}

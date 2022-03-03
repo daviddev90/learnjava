@@ -1,0 +1,40 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int subjects = in.nextInt();
+		int[] sums = new int[subjects];
+		double[] ratios = new double[subjects];
+		
+		for(int i = 0; i < subjects; i++) {
+			int students = in.nextInt();
+			int[] scores = new int[students];
+			int countAbove = 0;
+			
+			for(int j = 0; j < students; j++) {
+				scores[j] = in.nextInt();
+				sums[i] += scores[j];
+			}
+			
+			double avg = (double) sums[i] / students;
+			
+			for(int j = 0; j < students; j++) {
+				if(scores[j] > avg) {
+					countAbove++;
+				}
+			}
+			
+			ratios[i] = (double) countAbove / students;
+		}
+		
+		for(int i=0; i<subjects; i++) {
+			double ratio = ratios[i];
+			String ratioStr = String.format("%.3f", ratio) + "%";
+			System.out.println(ratioStr);
+		}
+	}
+}

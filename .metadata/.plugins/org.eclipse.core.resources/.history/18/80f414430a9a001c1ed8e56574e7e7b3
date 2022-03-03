@@ -1,0 +1,26 @@
+package com.javalec.function;
+
+public class FieldDan {
+	public int dan = 0;
+	
+	public FieldDan() {
+		
+	}
+	CheckEvenAndReturn checkReturn = new CheckEvenAndReturn();
+	
+	public void printDan() {
+		for(int i = 1; i <= 9; i++) {
+			System.out.println("(Field) " + checkReturn.returnString(i, dan));
+		}
+	}
+	
+	public String[] returnArrDan() {
+		String[] arr = new String[9];
+		
+		for(int i = 1; i <= 9; i++) {
+			arr[i-1] = ("(FieldArr) " + checkReturn.returnString(i, dan));
+		}
+		
+		return arr;
+	}
+}

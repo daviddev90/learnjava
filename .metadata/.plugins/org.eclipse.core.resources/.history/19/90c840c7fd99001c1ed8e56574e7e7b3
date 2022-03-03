@@ -1,0 +1,14 @@
+package com.javalec.function;
+
+public class MethodDan {
+	
+	public MethodDan() {
+		
+	}
+
+	public void printDan(int dan) {
+		for(int i = 1; i <= 9; i++) {
+			System.out.println(dan + " X " + i + " = " + (dan * i));
+		}
+	}
+}

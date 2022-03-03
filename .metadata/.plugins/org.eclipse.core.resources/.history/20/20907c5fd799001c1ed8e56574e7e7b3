@@ -1,0 +1,17 @@
+package com.javalec.function;
+
+public class Car {
+	//Property (field) = 전역변수 > Car 안에서 마음대로 사용 가능
+	public String company = "현대자동차";
+	public String model = "그랜저";
+	public String color = "검정";
+	public int maxSpeed = 350;
+	public int speed;
+	
+	//Constructor > 객체 만들 때 사용
+	public Car() {
+		
+	}
+	
+	//Method(function) > 동사
+}

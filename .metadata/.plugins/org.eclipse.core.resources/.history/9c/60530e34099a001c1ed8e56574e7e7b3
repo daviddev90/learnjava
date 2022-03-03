@@ -1,0 +1,19 @@
+package com.javalec.function;
+
+public class CheckEvenAndReturn {
+	public String ifEvenReturnStar(int i, int dan) {
+		if(i % 2 == 0) {
+			return returnStar(i);
+		}else {
+			return returnNormal(i);
+		}
+	}
+	
+	private String returnNormal(int i) {
+		return (dan + " X " + i + " = " + (dan * i));
+	}
+	
+	private String returnStar(int i) {
+		return (dan + " X * = " + (dan * i));
+	}
+}

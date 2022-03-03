@@ -1,0 +1,52 @@
+package com.javalec.function;
+
+public class Add {
+	//Field
+	public int num1 = 0;
+	public int num2 = 0;
+	
+	
+	public Add() {
+		//Constructor
+	}
+	
+	public Add(int num1, int num2) {
+		super();
+		this.num1 = num1;
+		this.num2 = num2;
+	}
+	
+	public int addAction() {
+		return (num1 + num2);
+	}
+	
+	public int subAction() {
+		return (num1 - num2);
+	}
+	
+	public int multipleAction() {
+		return (num1 * num2);
+	}
+	
+	public int divideAction() {
+		return (num1 / num2);
+	}
+
+	public String returnAddString() {
+		return (num1 + " + " + num2 + " = " + addAction());
+	}
+	
+	public String returnSubtractString() {
+		return (num1 + " - " + num2 + " = " + subAction());
+	}
+	
+	public String returnMultipleString() {
+		return (num1 + " * " + num2 + " = " + multipleAction());
+	}
+	
+	public String returnDivideAction() {
+		return (num1 + " / " + num2 + " = " + divideAction());
+	}
+	
+	
+}

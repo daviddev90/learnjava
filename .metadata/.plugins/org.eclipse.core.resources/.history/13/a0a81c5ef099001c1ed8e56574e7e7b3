@@ -1,0 +1,47 @@
+package com.bj.base;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int count = scan.nextInt();
+		String[] strArr = new String[count];
+		
+		for (int i = 0; i < count; i++) {
+			
+			String inputString = scan.nextLine();
+			System.out.println("input number and string : ");
+			
+			String[] inputSplitted = inputString.split("");
+			
+			System.out.println(Arrays.deepToString(inputSplitted));
+			
+			
+			System.out.println(inputSplitted[1]);
+			
+			int loopLen = Integer.parseInt(inputSplitted[0]);
+			String str = inputSplitted[1];
+			String[] strSplitted = str.split("");
+			
+			String word = "";
+			
+			for (int k = 0; k < strSplitted.length - 1; k++) {
+
+				for (int j=0; j < loopLen; j++) {
+					word += strSplitted[k];
+				}
+			}
+			
+			strArr[i] = word;
+		}
+		
+		for (int i=0; i<count; i++) {
+			System.out.println(strArr[i]);
+		}
+	}
+
+}

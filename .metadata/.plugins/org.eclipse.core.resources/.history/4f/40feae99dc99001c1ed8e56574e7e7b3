@@ -1,0 +1,23 @@
+package com.javalec.function;
+
+public class Korean {
+	//Field
+	public String nation = "대한민국";
+	public String name;
+	public String phone;
+	
+	//Constructor
+	public Korean() {
+		
+	}
+	
+	//Method
+	public void printName(String name1, String phone1) {
+		//void: return 값이 없다는 뜻
+		name = name1;
+		phone = phone1;
+		System.out.println("국적 : " + nation);
+		System.out.println("이름 : " + name);
+		System.out.println("휴대폰 : " + phone);
+	}
+}

@@ -1,0 +1,29 @@
+package com.javalec.function;
+
+public class ConstDan {
+
+	int dan = 0;
+
+	public ConstDan(int dan) {
+		super();
+		this.dan = dan;
+	}
+	
+	public void printDan() {
+		for(int i = 1; i <= 9; i++) {
+			System.out.println("(Const) " + dan + " X " + i + " = " + (dan * i));
+		}
+	}
+	
+	public String[] returnArrDan() {
+		String[] arr = new String[9];
+		
+		for(int i = 1; i <= 9; i++) {
+			arr[i-1] = ("(ConstArr) " + dan + " X " + i + " = " + (dan * i));
+		}
+		
+		return arr;
+	}
+	
+	
+}

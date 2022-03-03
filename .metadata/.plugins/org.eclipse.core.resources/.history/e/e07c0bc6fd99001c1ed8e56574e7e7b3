@@ -1,0 +1,15 @@
+package com.javalec.function;
+
+public class FieldDan {
+	public int dan = 0;
+	
+	public FieldDan() {
+		
+	}
+	
+	public void printDan() {
+		for(int i = 1; i <= 9; i++) {
+			System.out.println(dan + " X " + i + " = " + (dan * i));
+		}
+	}
+}

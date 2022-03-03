@@ -1,0 +1,36 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int[] scores = new int[n];
+		
+		for(int i = 0; i<n; i++) {
+			String str = in.next();
+			String[] arr = str.split("");
+			
+			int score = 0;
+			int row = 0;
+			
+			for (int j = 0; j < arr.length; j++) {
+				String res = arr[j];
+				if(res.equals("O")) {
+					row++;
+					score += row;
+				}else {
+					row = 0;
+				}
+			}
+			
+			scores[i] = score;
+		}
+		
+		for(int i = 0; i<n; i++) {
+			System.out.println(scores[i]);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package com.javalec.function;
+
+public class MethodDan {
+	
+	public MethodDan() {
+		
+	}
+
+	public void printDan(int dan) {
+		for(int i = 1; i <= 9; i++) {
+			System.out.println("(Method) " + dan + " X " + i + " = " + (dan * i));
+		}
+	}
+	
+	public String[] returnArrDan(int dan) {
+		String[] arr = new String[9];
+		
+		for(int i = 1; i <= 9; i++) {
+			arr[i-1] = ("(ConstArr) " + dan + " X " + i + " = " + (dan * i));
+		}
+		
+		return arr;
+	}
+}

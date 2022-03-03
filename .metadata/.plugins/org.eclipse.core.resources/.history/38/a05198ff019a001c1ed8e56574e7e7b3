@@ -1,0 +1,53 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+import com.javalec.function.ConstDan;
+import com.javalec.function.FieldDan;
+import com.javalec.function.MethodDan;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("몇 단을 출력할까요 ? : ");
+		int dan = scanner.nextInt();
+		
+		//fieldDan 선
+		FieldDan fieldDan = new FieldDan();
+		//fieldDan의 dan field(public)에 dan 입력
+		fieldDan.dan = dan;
+		//fieldDan의 출력 메소드를 통해 구구단 출력
+		fieldDan.printDan();
+		//fieldDan의 Array Return 메소드로 Array 받아옴
+		String[] stringArr = fieldDan.returnArrDan();
+		//받아온 Array를 출력
+		for(int i = 0; i < stringArr.length ; i++) {
+			System.out.println(stringArr[i]);
+		}
+		
+		//methodDan 선언
+		MethodDan methodDan = new MethodDan();
+		//메소드에 dan(int)을 인자로 넘기면서 실행 > 출력
+		methodDan.printDan(dan);
+		//methodDan의 Array Return 메소드에 dan을 넘겨 Array 리턴
+		String[] methodArr = methodDan.returnArrDan(dan);
+		//받아온 Array를 출
+		for(int i = 0; i < methodArr.length ; i++) {
+			System.out.println(methodArr[i]);
+		}
+		
+		//dan을 넘기며 ConstDan 선언
+		ConstDan constDan = new ConstDan(dan);
+		//printDan 바로 호출 > 출력
+		constDan.printDan();
+		
+		//Array를 메소드로 받아옴
+		String[] constArr = constDan.returnArrDan();
+		//받아온 Array를 출
+		for(int i = 0; i < constArr.length ; i++) {
+			System.out.println(constArr[i]);
+		}
+	}
+
+}

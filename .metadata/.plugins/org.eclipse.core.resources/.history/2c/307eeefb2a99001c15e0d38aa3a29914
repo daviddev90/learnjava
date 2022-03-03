@@ -1,0 +1,24 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	// 26부터 시작한다. 2+6 = 8이다. 새로운 수는 68이다. 6+8 = 14이다. 새로운 수는 84이다. 8+4 = 12이다. 새로운 수는 42이다. 4+2 = 6이다. 새로운 수는 26이다.
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		int origin = in.nextInt();
+		int loop = 1;
+		
+		int next = origin % 10 * 10 + (origin / 10 + origin % 10)%10;
+		
+		while(next != origin) {
+			next = next % 10 * 10 + (next / 10 + next % 10);
+			loop++;
+			System.out.println(next);
+		}
+		System.out.println(loop);
+	}
+}

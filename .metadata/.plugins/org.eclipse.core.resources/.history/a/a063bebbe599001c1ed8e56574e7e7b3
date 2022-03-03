@@ -1,0 +1,12 @@
+package com.javalec.function;
+
+public class Add {
+	//Field
+	public int num1 = 0;
+	public int num2 = 0;
+	
+	
+	public Add() {
+		//Constructor
+	}
+}

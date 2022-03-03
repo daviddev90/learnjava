@@ -1,0 +1,19 @@
+package com.javalec.function;
+
+public class MethodCalc {
+	// Field
+	
+	// Constructor
+	public MethodCalc() {
+		
+	}
+	
+	//Method
+	public String addResult(int num1, int num2) {
+		return (num1 + " + " + num2 + " = " + (num1 + num2));
+	}
+	
+	public String substractResult(int num1, int num2) {
+		return (num1 + " - " + num2 + " = " + (num1 - num2));
+	}
+}

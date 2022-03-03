@@ -1,0 +1,45 @@
+package com.javalec.function;
+
+public class ConstDan {
+
+	int dan = 0;
+
+	public ConstDan(int dan) {
+		super();
+		this.dan = dan;
+	}
+	
+	public void printDan() {
+		for(int i = 1; i <= 9; i++) {
+			System.out.println("const) " + ifEvenReturnStar(i));
+		}
+	}
+	
+	public String[] returnArrDan() {
+		String[] arr = new String[9];
+		
+		for(int i = 1; i <= 9; i++) {
+			arr[i-1] = "constArray) " + ifEvenReturnStar(i);
+		}
+		
+		return arr;
+	}
+	
+	private String ifEvenReturnStar(int i) {
+		if(i % 2 == 0) {
+			return returnStar(i);
+		}else {
+			return returnNormal(i);
+		}
+	}
+	
+	private String returnNormal(int i) {
+		return (dan + " X " + i + " = " + (dan * i));
+	}
+	
+	private String returnStar(int i) {
+		return (dan + " X * = " + (dan * i));
+	}
+	
+	
+}

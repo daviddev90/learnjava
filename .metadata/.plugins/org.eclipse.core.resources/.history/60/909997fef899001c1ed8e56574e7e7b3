@@ -1,0 +1,29 @@
+package com.javalec.function;
+
+public class ConstCalc {
+	int num1;
+	int num2;
+	
+	private void ConstCac() {
+
+	}
+
+	public ConstCalc(int num1, int num2) {
+		super();
+		this.num1 = num1;
+		this.num2 = num2;
+	}
+	
+	public String addResult() {
+		return (num1 + " + " + num2 + " = " + (num1 + num2));
+	}
+	public String substractResult() {
+		return (num1 + " + " + num2 + " = " + (num1 + num2));
+	}
+	public String multipleResult() {
+		return (num1 + " + " + num2 + " = " + (num1 + num2));
+	}
+	public String divideResult() {
+		return (num1 + " + " + num2 + " = " + (num1 + num2));
+	}
+}

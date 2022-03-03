@@ -1,0 +1,43 @@
+package com.javalec.base;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		int n = in.nextInt();
+		int count = 0;
+		
+		for(int i = 1; i<=n; i++) {
+			if(i<100) {
+				count++;
+			}else {
+				int number = i;
+				boolean hansoo = true;
+				boolean isFirstWhile = true;
+				int diff = 0;
+				
+				while(number > 0) {
+					int first = number % 10;
+					number = number / 10;
+					int second = number % 10;
+					
+					if(isFirstWhile || (first - second) == diff) {
+						diff = first - second;
+					}else {
+						hansoo = false;
+					}
+					isFirstWhile = false;
+				}
+				
+				if(hansoo) {
+					count++;
+				}
+			}
+		}
+		
+		System.out.println(count);
+	}
+}
